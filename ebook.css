@@ -1,0 +1,183 @@
+/* Reset y base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #222;
+  padding: 0;
+}
+
+/* Hero / portada */
+.hero {
+  background: #e0f7fa;
+  text-align: center;
+  padding: 80px 20px;
+  color: #007ea7;
+}
+
+.hero h1 {
+  font-size: 2.8em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.btn-principal {
+  background: #00bcd4;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: 0.3s ease;
+}
+
+.btn-principal:hover {
+  background: #0097a7;
+}
+
+/* Secciones generales */
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.descripcion ul,
+.contenido ol {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+h2 {
+  color: #007ea7;
+  margin-bottom: 15px;
+  font-size: 1.8em;
+}
+
+/* Sección de compra */
+.comprar {
+  text-align: center;
+  background-color: #f1fcfd;
+  padding: 50px 20px;
+  border-top: 2px solid #b2ebf2;
+  border-bottom: 2px solid #b2ebf2;
+}
+
+.btn-compra {
+  background: #007ea7;
+  color: white;
+  padding: 15px 40px;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-top: 20px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.btn-compra:hover {
+  background: #005f73;
+}
+
+.garantia {
+  margin-top: 15px;
+  color: #007ea7;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background-color: #e0f7fa;
+  text-align: center;
+  padding: 30px 10px;
+  margin-top: 50px;
+  color: #555;
+  font-size: 0.9em;
+}
+
+footer a {
+  color: #007ea7;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* --------------------------- */
+/* 🖥️📱 Diseño Responsive */
+/* --------------------------- */
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 15px;
+  }
+
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+
+  .btn-principal,
+  .btn-compra {
+    padding: 12px 25px;
+    font-size: 1em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  section {
+    padding: 0 15px;
+  }
+
+  .comprar {
+    padding: 40px 15px;
+  }
+
+  .btn-compra {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.6em;
+  }
+
+  .hero p {
+    font-size: 0.95em;
+  }
+
+  h2 {
+    font-size: 1.3em;
+  }
+
+  .btn-principal,
+  .btn-compra {
+    font-size: 0.95em;
+    padding: 10px 20px;
+  }
+
+  .btn-compra {
+    width: 100%;
+  }
+
+  section {
+    padding: 0 10px;
+  }
+}
